@@ -1,0 +1,988 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Navigationbar{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 100;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 70%;
+}
+.Logo h1{
+    color: #C34600;
+}
+.HAMB{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 13%;
+}
+#Menu{
+    position: absolute;
+    top: 10vh;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 0vh; 
+    display: flex;
+}
+#Menu ul{
+    list-style: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    display: none;
+}
+#Menu ul li{
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#Menu ul li:hover{
+    color: #C34600;
+}
+.hero{
+    width: 100%;
+    height: 60vh;
+    background-color: aqua;
+    position: absolute;
+    top: 10vh;
+    background-image: url(Assets/main.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.secondsection{
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    top: 70vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.secondsection h1{
+    margin-top: 10%;
+    color: #C34600;
+}
+.destinations{
+    display: flex;
+    text-align: center;
+}
+.destinations img{
+    width: 90PX;
+    height: 62px;
+    object-fit: cover;
+}
+.destinations h1{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.destinationo{
+    position: absolute;
+    top: 30%;
+}
+.destinationt{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+.destinationtt{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+.destinationf{
+    position: absolute;
+    top: 65%;
+    left: 20%;
+}
+.destinationff{
+    position: absolute;
+    top: 65%;
+    left: 55%;
+}
+.thirdsection{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 130vh;
+    text-align: center;
+}
+.thirdsection h1{
+    margin-top: 10%;
+    color: #C34600;
+}
+.thirdsection p{
+    margin-top: 10%;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 5%;
+}
+.team{
+    transform: scale(0.9);
+}
+.team2{
+    margin-top: 5%;
+}
+.team3{
+    margin-top: 5%;
+}
+.fourthsection{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 400vh;
+    background-color: #0B1331;
+}
+.divione, .divitwo, .divithree, .divifour{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.divione h1, .divitwo h1, .divithree h1, .divifour h1{
+    color: #C34600;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divione p, .divitwo p, .divithree p, .divifour p{
+    width: 100%;
+    position: absolute;
+    color: #969696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 60%;
+}
+.divione{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.divitwo{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.divithree{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.divifour{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.fifthsection{
+    width: 100%;
+    height: 250vh;
+    position: absolute;
+    top: 450vh;
+    display: flex;
+    text-align: center;
+}
+.fifthsection h1{
+    color: #C34600;
+    margin-top: 10%;
+}
+.cardone{
+    position: absolute;
+    top: 10%;
+    left: 5%; 
+}
+.cardtwo{
+    position: absolute;
+    top: 40%;
+    right: 5%; 
+}
+.cardthree{
+    position: absolute;
+    top: 70%;
+    left: 5%; 
+}
+.cardone, .cardtwo ,.cardthree{
+    width: 90%;
+    height: 23%;
+    background-color: white;
+    border: 1px rgba(0, 0, 0, 0.436) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardone h1 , .cardtwo h1 , .cardthree h1{
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1463AB;
+}
+.cardone h2 , .cardthree h2{
+    width: 100%;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 27%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #969696;
+}
+.cardtwo h2 {
+    width: 100%;
+    position: absolute;
+    font-size: 0.8rem;
+    top: 39%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #969696;
+}
+.cardone p , .cardthree p{
+    width: 100%;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    line-height: 120%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cardtwo p {
+    width: 100%;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    padding: 10px 5px;
+    line-height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cardone h3 , .cardtwo h3 , .cardthree h3{
+    width: 100%;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #969696;
+}
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: #1463AB;
+    position: absolute;
+    bottom: 0;
+}
+.formsection{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 700vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formsection h1{
+    position: absolute;
+    top: 5%;
+    color: #C34600;
+    margin-top: 10%;
+}
+.first{
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+.last{
+    position: absolute;
+    top: 40%;
+    right: 15%;
+}
+.mail{
+    position: absolute;
+    top: 55%;
+    left: 15%;
+}
+.phone{
+    position: absolute;
+    top: 70%;
+    right: 15%;
+}
+.first ,.last ,.mail ,.phone{
+    width: 70%;
+    height: 7%;
+}
+.check{
+    position: absolute;
+    top: 80%;
+    left: 17%;
+}
+.news{
+    position: absolute;
+    top: 80%;
+    right: 20%;
+}
+.button{
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    width: 70%;
+    height: 7%;
+    background-color: #3590e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.Foot{
+   width: 100%;
+    height: 60vh;
+    background-color: #0E3B45;
+    position: absolute;
+    top: 800vh; 
+}
+.fs1, .fs2, .fs3 ,.fs4, .fs5{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    color: white;
+}
+.fs1 h1, .fs2 h1, .fs3 h1 ,.fs4 h1, .fs5 h1{
+    width: 100%;
+}
+.fs1 ul, .fs2 ul, .fs3 ul ,.fs4 ul, .fs5 ul{
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 0 5px;
+}
+.fs1 li, .fs2 li, .fs3 li ,.fs4 li, .fs5 li{
+    padding: 10px 25px;
+}
+.fs1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.fs2{
+    position: absolute;
+    top: 15%;
+    left: 0%;
+}
+.fs3{
+    position: absolute;
+    top: 35%;
+    left: 0%;
+}
+.fs4{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.fs5{
+    position: absolute;
+    top: 75%;
+    left: 0%;
+}
+.lowersec{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;  
+}
+.lowersec p{
+    font-size: 0.6rem;
+}
+.dd1{
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.8rem;
+}
+.dd1 h3{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.dd2{
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.7rem;
+}
+@media (min-width: 375px){
+    .destinations img{
+        width: 100px;
+        height: 70px;
+    }
+    .destinationo{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+    .destinationt{
+        position: absolute;
+        top: 30%;
+        left: 38%;
+    }
+    .destinationtt{
+        position: absolute;
+        top: 30%;
+        right: 5%;
+    }
+}
+@media (min-width: 425px){
+    .destinations img{
+        width: 116PX;
+        height: 80px;
+        object-fit: cover;
+    }
+    .check{
+        left: 25%;
+    }
+    .news{
+        right: 25%;
+    }
+}
+@media (min-width: 768px){
+    .Logo{
+        width: 30%;
+        position: relative;
+        left: 5%;
+    }
+    .HAMB{
+        display: none;
+    }
+    #Menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0%;
+        height: 10vh;
+        width: 60%;
+    }
+    #Menu ul li{
+        display: inline-block;
+        margin: 0px 10px;
+        
+    }
+    #Menu ul{
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        margin-top:35px;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+    .secondsection{
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+    }
+    .secondsection h1{
+        margin-top: 5%;
+    }
+    .destinations img{
+        transform: scale(1.2);
+    }
+    .destinationo{
+        position: absolute;
+        top: 45%;
+        left: 3%;
+    }
+    .destinationt{
+        position: absolute;
+        top: 45%;
+        left: 23%;
+    }
+    .destinationf{
+        position: absolute;
+        top: 45%;
+        left: 42%;
+    }
+    .destinationtt{
+        position: absolute;
+        top: 45%;
+        left: 45%;
+    }
+    .destinationff{
+        position: absolute;
+        top: 45%;
+        left: 82%;
+    }
+    .thirdsection{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .thirdsection h1{
+        margin-top: 2%;
+    }
+    .thirdsection p{
+        width: 70%;
+        position: absolute;
+        top: 0%;
+        left: 15%;
+    }
+    .team{
+        position: absolute;
+        top: 25%;
+        left: -2%;
+        transform: scale(0.8);
+    }
+    .team2{
+        position: absolute;
+        top: -3%;
+        left: 105%;
+    }
+    .team3{
+        position: absolute;
+        top: -3.5%;
+        left: 210%;
+
+    }
+    .fourthsection{
+        top: 230vh;
+        height: 35vh;
+    }
+    .divione{
+        width: 25%;
+        height: 100%;
+    }
+    .divitwo{
+        width: 25%;
+        height: 100%;
+        left: 25%;
+    }
+    .divithree{
+        width: 25%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+    }
+    .divifour{
+        width: 25%;
+        height: 100%;
+        right: 0%;
+        top: 0;
+    }
+    .divione h1, .divitwo h1, .divithree h1, .divifour h1{
+        top: 30%;
+    }
+    .divione p, .divitwo p, .divithree p, .divifour p{
+        top: 55%;
+    }
+    .fifthsection{
+        top: 270vh;
+        height: 80vh;
+        text-align: center;
+        justify-content: center;
+    }
+    .fifthsection h1{
+        margin-top: 3%;
+    }
+    .cardone, .cardtwo ,.cardthree{
+        width: 30%;
+        height: 70%;
+    }
+    .cardone{
+        top: 20%;
+        left: 2%;
+    }
+    .cardtwo{
+        top: 20%;
+        left: 35.3%;
+    }
+    .cardthree{
+        top: 20%;
+        left: 68.6%;
+    }
+    .cardone h1 , .cardtwo h1 , .cardthree h1{
+        font-size: 1.3rem;
+    }
+    .cardone h2 , .cardthree h2{
+        top: 17%;
+    }
+    .cardtwo h2 {
+        top: 17%;
+    }
+    .cardone p ,.cardtwo p, .cardthree p{
+        top: 30%;
+    }
+    .formsection{
+        top: 350vh;
+        height: 60vh;   
+    }
+    .formsection h1{
+        top: -15%;
+    }
+    .first{
+        width: 30%;
+        height: 10%;
+        left: 18%;
+        border-radius: 5px;
+        border: 1px rgba(0, 0, 0, 0.436) solid;
+    }
+    .last{
+        width: 30%;
+        height: 10%;
+        top: 25%;
+        right: 18%;
+        border-radius: 5px;
+        border: 1px rgba(0, 0, 0, 0.436) solid;
+    }
+    .mail{
+        width: 64%;
+        height: 10%;
+        left: 18%;
+        top: 40%;
+        border-radius: 5px;
+        border: 1px rgba(0, 0, 0, 0.436) solid;
+    }
+    .phone{
+        width: 64%;
+        height: 10%;
+        left: 18%;
+        top: 54%;
+        border-radius: 5px;
+        border: 1px rgba(0, 0, 0, 0.436) solid;        
+    }
+    .check{
+        top: 70%;
+        left: 36%;
+    }
+    .news{
+        top: 70%;
+        right: 36%;
+    }
+    .button{
+        top: 80%;
+        left: 32.5%;
+        width: 35%;
+        height: 10%;
+        border-radius: 5px;
+    }
+    .Foot{
+        top: 410vh;
+    }
+    .fs1, .fs2, .fs3 ,.fs4, .fs5{
+        font-size: 0.7rem;
+    
+    }
+    .fs1 ul, .fs2 ul, .fs3 ul ,.fs4 ul, .fs5 ul{
+        font-size: 0.9rem;
+    
+    }
+    .dd1 h3{
+        margin-top: 5px;
+        margin-left: 100px;
+    }
+}
+@media (min-width: 1024px){
+    .Logo{
+        width: 20%;
+        position: relative;
+        left: 5%;
+    }
+    .Logo h1{
+        font-size: 2.7rem;
+    }
+    .HAMB{
+        display: none;
+    }
+    #Menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0%;
+        height: 10vh;
+        width: 60%;
+    }
+    #Menu ul li{
+        display: inline-block;
+        margin: 10px 30px;
+        font-size: 1.4rem;
+        
+    }
+    #Menu ul{
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        margin-top:35px;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        display: block;
+    }
+    .hero{
+        height: 70vh;
+    }
+    .secondsection{
+        top: 80vh;
+    }
+    .secondsection h1{
+        font-size: 2.8rem;
+        margin-top: 3%;
+    }
+    .destinations img{
+        transform: scale(2.2);
+    }
+    .destinationo{
+        left: 7%;
+    }
+    .destinationtt{
+        left: 45%;
+    }
+    .destinationt{
+        left: 27%;
+    }
+    .destinationf{
+        left: 47%;
+    }
+    .destinationff{
+        left: 85%;
+    }
+    .destinations h2{
+        position: absolute;
+        top: 160%;
+        font-size: 1.7rem;
+    }
+    .destinationt h2{
+        left: 20%;
+    }
+    .destinationtt h2{
+        left: 43%;
+    }
+    .thirdsection{
+        top: 130vh;
+        height: 95vh;
+    }
+    .thirdsection h1{
+        font-size: 3.2rem;
+        margin-top: 3%;
+    }
+    .thirdsection p{
+        width: 65%;
+        position: absolute;
+        top: -5%;
+        left: 15.5%;
+        font-size: 1.5rem;
+    }
+    .team{
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        transform: scale(1.1);
+    }
+    .team2{
+        left: 150%;
+    }
+    .team3{
+        left: 300%;
+    }
+    .fourthsection{
+        top: 230vh;
+    }
+    .divione h1, .divitwo h1, .divithree h1, .divifour h1{
+        font-size: 3.5rem;
+    }
+    .divione p, .divitwo p, .divithree p, .divifour p{
+        font-size: 1.5rem;
+    }
+    .fifthsection{
+        top: 265vh;
+        text-align: center;
+    }
+    .fifthsection h1{
+        font-size: 3.5rem;
+    }
+    .cardone h1 , .cardtwo h1 , .cardthree h1{
+        font-size: 2.5rem;
+    }
+    .cardone h2 , .cardthree h2{
+        top: 20%;
+        font-size: 1.2rem;
+    }
+    .cardtwo h2 {
+        top: 20%;
+        font-size: 1.2rem;
+    }
+    .cardone p ,.cardtwo p, .cardthree p{
+        top: 30%;
+        font-size: 2rem;
+    }
+    .cardone ,.cardtwo , .cardthree {
+        top: 25%;
+    }
+    .cardone h3 , .cardtwo h3 , .cardthree h3{
+        font-size: 1.3rem;
+    }
+    .formsection{
+        height: 70vh;
+    }
+    .formsection h1{
+        top: -20%;
+        font-size: 3.5rem;
+    }
+    .check{
+        transform: scale(1.5);
+        left: 40%;
+    }
+    .news{
+        font-size: 1.8rem;
+        top: 68%;
+    }
+    .button{
+        font-size: 1.7rem;
+    }
+    .formsection input{
+        font-size: 1.2rem;
+    }
+    .Foot{
+        top: 420vh;
+        height: 40vh;
+    }
+    .lowersec p{
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    .fs1 h1, .fs2 h1, .fs3 h1 ,.fs4 h1, .fs5 h1{
+        margin-left: 10%;
+        position: relative;
+        top: 15%;
+    }
+    .fs1, .fs2, .fs3 ,.fs4, .fs5{
+        font-size: 1rem;
+        height: 100%;
+        width: 20%;
+        display: inline-block;
+    }
+    .fs1 ul, .fs2 ul, .fs3 ul ,.fs4 ul, .fs5 ul{
+        display: inline-block;
+        text-align: left;
+        margin-top: 15%;
+    }
+    .fs1 li, .fs2 li, .fs3 li ,.fs4 li, .fs5 li{
+        margin-left: 10%;
+        margin-top: 2%;
+        font-size: 1.5rem;
+    }
+    .fs1{
+        top: 0%;
+        left: 0%;
+    }
+    .fs2{
+        top: 0%;
+        left: 20%;
+    }
+    .fs3{
+        top: 0%;
+        left: 40%;
+    }
+    .fs4{
+        top: 0%;
+        left: 60%;
+    }
+    .fs5{
+        top: 0%;
+        left: 80%;
+    }
+    .dd1{
+        font-size: 1.2rem;
+        height: 50%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .dd1 h3{
+        margin-top: 10%;
+        margin-left: 100px;
+    }
+    .dd2{
+        font-size: 1.5rem;
+        height: 50%;
+        width: 100%;
+        top: 50%;
+        left: 0;
+    }
+    .dd2 p{
+        margin-left: 35%;
+    }
+}
